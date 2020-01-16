@@ -1,0 +1,44 @@
+div[data-base="baseLayer"] {
+    width: 100%;
+}
+
+div[data-base="baseContainer"] {
+    width: 50rem;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainText {
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+div[data-head="headBlock"] {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+div[data-flor="florBlock"] {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+div [data-flor="florBlock"] div {
+    margin: 0 auto;
+}
