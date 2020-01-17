@@ -1,0 +1,25 @@
+div[data-workBlock="WorkBlock"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-enterInput] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterLabels {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+#forma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

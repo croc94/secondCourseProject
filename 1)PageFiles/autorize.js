@@ -17,7 +17,13 @@ function valid (form) {
 }
 
 function registr () {
-    let changeMom = document.getElementById ('workBlock');
-    let texting = '<div><input type="button" value="Войти" onclick="valid (document.getElementById ("forma"))"><input type="button" value="Зарегистрироваться" onclick="registr ()"></div>'
-    changeMom.innerHTML = texting;
+    /* переход и подгрузка от первой ко второй странице регистрации */
+    let blockHTML= document.getElementById ('workBlock');
+    blockHTML.innerHTML = dataObj['page2']['html'];
+
+    let blockCSS= document.getElementById ('ChangeStyle');
+    blockCSS.innerHTML = dataObj['page2']['css'];
+
+    let blockJS= document.getElementById ('ChangeScript');
+    blockJS.innerHTML = dataObj['page2']['js'];
 }

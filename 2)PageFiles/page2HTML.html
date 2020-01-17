@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FitCalendar</title>
+    <title>Page 2</title>
     <!-- header and footer styles -->
-    <link rel="stylesheet" href="basicStyles/headFlorStyle.css">
-    <!-- scripts and style for 1st page -->
-    <script src="1)PageFiles/autorize.js"></script>
-    <link rel="stylesheet" href="1)PageFiles/1pageStyle.css">
-    <!-- script that contain data -->
-    <script src="bankData/bankScript.js"></script>
+    <link rel="stylesheet" href="../headFlorStyle.css">
     <!-- script and styles for changing -->
     <script id="ChangeScript"></script>
     <style id="ChangeStyle"></style>
+    <!-- timeles link for page 2 -->
+    <script src="page2Script.js"></script>
+    <link rel="stylesheet" href="page2Style.css">
 </head>
 <body>
     <div data-base="baseLayer">
@@ -29,10 +27,10 @@
                     <div data-enterInput="enterInput">
                         <div>
                             <div class="enterLabels">
-                                <label for="login">Логин</label>
+                                <label for="login">Пароль</label>
                             </div>
                             <div class="enterLabels">
-                                <label for="password">Пароль</label>
+                                <label for="password">Повторите пароль пароль</label>
                             </div>
                         </div>
                         <div>
@@ -46,8 +44,7 @@
                         </div>
                     </div>
                     <div>
-                        <input type="button" value="Войти" onclick="valid (document.getElementById ('forma'))">
-                        <input type="button" value="Зарегистрироваться" onclick="registr ()">
+                        <input type="button" value="Зарегистрироваться" onclick="registrProcess ()">
                     </div>
                 </form>
             </div>
