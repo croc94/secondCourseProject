@@ -42,3 +42,8 @@ div[data-flor="florBlock"] {
 div [data-flor="florBlock"] div {
     margin: 0 auto;
 }
+
+.mainText div:hover, .mainText div.active {
+    background-color: steelblue;
+    color: white;
+}
