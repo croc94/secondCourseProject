@@ -1,0 +1,64 @@
+/*загаловки*/
+.heading1 {
+    font-size: 1.5rem;
+}
+
+.heading2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.heading3 {
+    font-size: 0.8rem;
+    
+}
+
+/*загаловок страницы*/
+#page-title {
+    font-size: 1.5rem;
+}
+
+/*article styles*/
+.articleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    font-size: 1rem;
+}
+
+.article {
+    width: 48%;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    background-color: rgb(242, 242, 242);
+    border: darkseagreen;
+    border-radius: 1rem;
+}
+
+.article:hover, .gallery:hover {
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.article:not(:hover), .gallery:not(:hover) {
+    transition: 1s;
+}
+
+.article2 {
+    background-image: url(../img/article2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+/*галерея изображений*/
+.gallery {
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    border: darkseagreen;
+    border-radius: 1rem;
+}
+

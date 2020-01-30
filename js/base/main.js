@@ -27,7 +27,27 @@ let config = {
         contacts : {
             title : 'Контакты', 
             menu : 'contacts'
-        }
+        },
+        article1 : {
+            title : 'Польза приседаний',
+            menu : 'article1'
+        },
+        article2 : {
+            title : 'Виды приседаний',
+            menu : 'article2'
+        },
+        article3 : {
+            title : 'Рекорд',
+            menu : 'article3'
+        },
+        article4 : {
+            title : 'Техника',
+            menu : 'article4'
+        },
+        article5 : {
+            title : 'Галерея изображений',
+            menu : 'article5'
+        },
     }
 };
 
@@ -57,7 +77,7 @@ function navigate (e) {
     //Отменяет выполнение события по умолчания, у примеру переход по сссылке
     //e.preventDefault (); */
 
-    let page = $(e.target).attr ('data-menu');
+    let page = $(e.currentTarget).attr ('data-menu');
 
     loadPage (page);
     history.pushState ({page : page}, '', page);
@@ -65,7 +85,13 @@ function navigate (e) {
 
 //upload content
 function loadPage (page) {
-    let url = '../../html/' + page + '.html';
+    let url = '';
+    if ((page == 'main') || (page == 'report') || (page == 'plan') || (page == 'enter') || (page == 'registr') || (page == 'contacts')) {
+        url = '../../html/' + page + '.html';
+    } else {
+        url = '../../html/articles/' + page + '.html';
+    }
+    console.log ('переход будет по урлу ' + url);
     let pageTitle = config.pages[page].title;
     let menu = config.pages[page].menu;
 
@@ -80,7 +106,7 @@ function loadPage (page) {
 }
 
  //initialization of application
- function init () {
+function init () {
     let page = document.location.pathname.substr (1) || config.mainPage;
     
     loadPage (page);
