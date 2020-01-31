@@ -1,2 +1,19 @@
-<h2>Это страница плана.</h2>
-<h3>Я уже не помню что хотел на ней сделать</h3>
+<link rel="stylesheet" href="style/plan.css">
+<div class="svgContainer">
+    <div class="svgImage svgSize" id="svgField">
+        <svg width = 25rem height = 25rem>
+            <circle id="svgHead" cx = 12.5rem cy = 5rem r = 1.5rem stroke = black fill = blue />
+            <ellipse id="svgBody" cx = 12.5rem cy = 9.5rem rx = 1.5rem ry = 3rem stroke = black fill = blue />
+            <ellipse  id="svgArm" style="transform-box: fill-box;" transform = 'rotate (0)' cx = 12.5rem cy = 9.5rem rx = 0.7rem ry = 1.5rem stroke = black fill = blue />
+            <ellipse id="svgHip" style="transform-box: fill-box;" transform = 'rotate (0)' cx = 12.5rem cy = 14rem rx = 0.7rem ry = 1.5rem stroke = black fill = blue />
+            <ellipse style="transform-box: fill-box;" transform = 'rotate (180)' id="svgShin" cx = 14rem cy = 20rem rx = 0.7rem ry = 1.5rem stroke = black fill = blue />
+        </svg>
+    </div>
+    <div class="svgButton svgSize">
+        <button onclick="time ()">Старт</button>
+        <button data-time = '20000' onclick="clickBut (20000)">20 секунд</button>
+        <button data-time = '30000' onclick="clickBut (30000)">30 секунд</button>
+        <button data-time = '40000' onclick="clickBut (40000)">40 секунд</button>
+    </div>
+</div>
+<script src="js/plan.js"></script>
