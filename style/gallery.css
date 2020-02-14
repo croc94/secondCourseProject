@@ -1,0 +1,21 @@
+.data-foto {
+    width: 35rem;
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+}
+.data-foto-show {
+    display: block;
+}
+
+.buttonGallery {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonGallery div:hover {
+    transform: scale(1.15) translate(0);
+}
